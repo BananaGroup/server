@@ -7,8 +7,6 @@ class Sensor extends Readings
     private $value;
     private $timestamp;
 
-    public $response;
-
 
     /**
      * Set Objects values
@@ -57,6 +55,7 @@ class Sensor extends Readings
 
             $this->response = array(
                     "success" => "true",
+                    "user_id" => $this->user_id,
                     "reading" => array(
                         "sensor_id" => $this->sensor_id,
                         "value" => $this->value
