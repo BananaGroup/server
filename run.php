@@ -32,8 +32,8 @@ if (!empty($_POST)) {
 
         $readings[] = array(  'user_id'    =>  (int) $_POST['user_id'],
                               'sensor_id'  =>  (int) $_POST['sensor_id'],
-                              'value'      =>  (int) $_POST['value'],
-                              'timestamp' =>  $_POST['timestamp']
+                              'value'      =>  $_POST['value'],
+                              'timestamp'  =>  $_POST['timestamp']
                             );
 
     }

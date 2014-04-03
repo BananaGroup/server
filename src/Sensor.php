@@ -19,7 +19,7 @@ class Sensor extends Readings
 
         $this->user_id = (int) $user_id;
         $this->sensor_id = (int) $sensor_id;
-        $this->value = (int) $value;
+        $this->value = $value;
         $this->timestamp = $timestamp;
 
     }
